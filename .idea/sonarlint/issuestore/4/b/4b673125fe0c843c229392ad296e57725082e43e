@@ -1,0 +1,62 @@
+
+J
+java:S3740!"/Provide the parametrized type for this generic.(Ñ‘˜ıÿÿÿÿ
+E
+java:S3740""/Provide the parametrized type for this generic.(È¸Üƒ
+E
+java:S3740#"/Provide the parametrized type for this generic.(Ğ–Ÿí
+E
+java:S3740$"/Provide the parametrized type for this generic.(Å½«œ
+J
+java:S3740("/Provide the parametrized type for this generic.(âÎˆÿÿÿÿÿ
+j	java:S116"URename this field "DocterPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ßÍÔ
+j	java:S116""URename this field "DocterName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È¸Üƒ
+j	java:S116#"URename this field "DocterType" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ–Ÿí
+@
+java:S5869)"*Remove duplicates in this character class.(ãÃï³
+h	java:S100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×§ä°şÿÿÿÿ
+h	java:S1009"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éô¯şÿÿÿÿ
+B
+java:S1602R",Remove useless curly braces around statement(åÆ½
+c	java:S100Y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò—”‘
+H
+java:S1172Y"2Remove this unused method parameter "actionEvent".(ò—”‘
+h	java:S100d"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ÜüØÿÿÿÿÿ
+L
+java:S1854f"6Remove this useless assignment to local variable "e1".(÷ƒş»
+M
+java:S1172d"2Remove this unused method parameter "actionEvent".(½ÜüØÿÿÿÿÿ
+=
+java:S1481f"'Remove this unused "e1" local variable.(÷ƒş»
+c	java:S100n"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—å„‹
+H
+java:S1172n"2Remove this unused method parameter "actionEvent".(—å„‹
+M
+java:S1172"1Remove this unused method parameter "mouseEvent".(é™¼Âüÿÿÿÿ
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ä½ÍÄüÿÿÿÿ
+M
+java:S1128"2Remove this unused import 'view.Tm.UserDitailsTm'.(«Ç³ıÿÿÿÿ
+f	java:S117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Âº…
+n
+java:S1104"XMake txtDoctersID a static final constant or non-public and provide accessors if needed.(÷¸é˜
+o
+java:S1104"YMake txtDocterName a static final constant or non-public and provide accessors if needed.(·Ú¡Ø
+q
+java:S1104"[Make txtDocterNumber a static final constant or non-public and provide accessors if needed.(å¶óù
+l
+java:S1104"VMake DocterPane a static final constant or non-public and provide accessors if needed.(¹ßÍÔ
+n
+java:S1104"YMake txtDocterType a static final constant or non-public and provide accessors if needed.(¹¦!
+k
+java:S1104 "UMake tblDocter a static final constant or non-public and provide accessors if needed.(î“ùş
+r
+java:S1104!"WMake colDocterId a static final constant or non-public and provide accessors if needed.(Ñ‘˜ıÿÿÿÿ
+l
+java:S1104""VMake DocterName a static final constant or non-public and provide accessors if needed.(È¸Üƒ
+l
+java:S1104#"VMake DocterType a static final constant or non-public and provide accessors if needed.(Ğ–Ÿí
+r
+java:S1104$"\Make colContactNumber a static final constant or non-public and provide accessors if needed.(Å½«œ
+i
+java:S1104%"SMake butsave a static final constant or non-public and provide accessors if needed.(œ¼É„

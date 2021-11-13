@@ -1,0 +1,42 @@
+.root{
+    -fx-background-color: #c9fde2;
+}
+.sideAnchorPane{
+    -fx-background-color:#cce6ff;
+    -fx-border-style:solid;
+}
+#txtPassword,#txtUserName,#cmbSelectRole{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color:#368B85;
+}
+.border{
+    -fx-border-radius: 12px;
+    -fx-background-radius: 50px;
+    -fx-border:solid;
+    -fx-display: block;
+}
+
+#txtPassword:pressed,#txtUserName:pressed,#cmbSelectRole:pressed{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color:#06F89D;
+}
+
+
+#btnLogIn:hover{
+    -fx-background-color: #368B85;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0), 0, 0.0 , 0 , 0 );
+}
+
+#btnClear:hover{
+    -fx-background-color: #798777;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0), 0, 0.0 , 0 , 0 );
+
+}

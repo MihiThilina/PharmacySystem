@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="NewDocterPane" prefHeight="649.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DocterDetailsController">
+   <children>
+      <TableView fx:id="tblDocter" layoutX="25.0" layoutY="124.0" onMouseClicked="#ontbleClick" prefHeight="467.0" prefWidth="876.0" stylesheets="@../style/table.css">
+         <columns>
+            <TableColumn fx:id="colDocterId" prefWidth="171.0" text="Docter Id" />
+            <TableColumn fx:id="colPriscriptionId" minWidth="0.0" prefWidth="212.0" text="Priscription Id" />
+            <TableColumn fx:id="colDate" minWidth="0.0" prefWidth="263.0" text="Date" />
+            <TableColumn fx:id="colTime" minWidth="0.0" prefWidth="235.0" text="time" />
+         </columns>
+      </TableView>
+      <Separator layoutY="43.0" prefHeight="9.0" prefWidth="925.0" />
+      <Text layoutX="11.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Docter  Information" wrappingWidth="269.7294921875">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Button layoutX="699.0" layoutY="73.0" mnemonicParsing="false" onAction="#BackToDocterInformation" prefHeight="26.0" prefWidth="202.0" style="-fx-background-color: #24C1FF;" styleClass="pane" stylesheets="@../style/addThings.css" text="View Docter Information" />
+   </children>
+</AnchorPane>

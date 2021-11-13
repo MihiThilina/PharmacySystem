@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginPane" prefHeight="543.0" prefWidth="928.0" style="-fx-background-color: linear-gradient(to right top, #ffffff, #fafdff, #effcff, #e2fcff, #d5fcff);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Pane layoutX="103.0" layoutY="59.0" prefHeight="458.0" prefWidth="697.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="80.0">
+         <padding>
+            <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+         </padding>
+         <children>
+            <Label fx:id="lblWrongLogIn" alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="264.0" prefHeight="32.0" prefWidth="410.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="264.0" layoutY="26.0" prefHeight="58.0" prefWidth="134.0" text="LOGIN">
+               <font>
+                  <Font name="Dyuthi Regular" size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="269.0" layoutY="202.0" prefHeight="26.0" prefWidth="410.0" promptText="User Name" />
+      <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="268.0" layoutY="307.0" prefHeight="26.0" prefWidth="410.0" promptText="Password" />
+      <Button fx:id="butLogin" alignment="CENTER" blendMode="MULTIPLY" layoutX="268.0" layoutY="367.0" mnemonicParsing="false" onAction="#openDashBord" opacity="0.89" prefHeight="47.0" prefWidth="420.0" style="-fx-background-color: linear-gradient(to right top, #84ff91, #73ffac, #69ffc4, #68ffd8, #72ffe9);;" styleClass="root" stylesheets="@../style/LoginForm.css" text="Login" wrapText="true">
+         <font>
+            <Font name="Gargi" size="26.0" />
+         </font></Button>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="651.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/man.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="650.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/privacy.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="300.0" layoutX="413.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/spinnervlll.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

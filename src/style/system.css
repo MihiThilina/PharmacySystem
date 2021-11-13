@@ -1,0 +1,34 @@
+
+.right-side-background{
+    -fx-background-color: rgba(179,157,218,0.97);
+}
+.left-side-background{
+    -fx-background-color: #b5ffff;
+}
+.transparent{
+    -fx-background-color:rgba(0,0,0,0) ;
+}
+.border{
+    -fx-border-color:#1f1f2e;
+    -fx-border-width:0.3;
+}
+.anchorpane{
+    -fx-background-color:#01BED2 ;
+    -fx-border-width: 2;
+    -fx-border-color: black;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+.right-side-border{
+    -fx-background-color:#01BED2 ;
+    -fx-border-width: 2;
+    -fx-border-color: black;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+.anchorpanePPiii{
+    -fx-border-width: 2;
+    -fx-border-color: rgba(0,199,180,0.97);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}

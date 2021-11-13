@@ -1,0 +1,23 @@
+
+\
+java:S1126/"AReplace this if-then-else statement by a single return statement.(ìòßîøÿÿÿÿ
+N
+java:S1128"3Remove this unused import 'model.EmployeesDetails'.(°é®üÿÿÿÿ
+‹
+java:S1319H"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ï°ƒëøÿÿÿÿ
+k	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ÷òúÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íª»
+e
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ò€§
+e
+java:S2095$"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(± ©À
+j
+java:S20957"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(“êŞùÿÿÿÿ
+e
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(„ ùÈ
+e
+java:S2095["OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Øñ±¼
+j
+java:S2095/"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ìòßîøÿÿÿÿ
+e
+java:S2095I"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(×ñ»™

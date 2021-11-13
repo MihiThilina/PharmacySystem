@@ -1,0 +1,99 @@
+
+E
+java:S3740 "/Provide the parametrized type for this generic.(É³·
+E
+java:S3740!"/Provide the parametrized type for this generic.(ô€»¬
+J
+java:S3740""/Provide the parametrized type for this generic.(Ñ‘˜ıÿÿÿÿ
+J
+java:S3740#"/Provide the parametrized type for this generic.(ì°»üÿÿÿÿ
+E
+java:S3740$"/Provide the parametrized type for this generic.(¯ÿı°
+E
+java:S3740%"/Provide the parametrized type for this generic.(Ş˜ıÚ
+D
+java:S3740&"/Provide the parametrized type for this generic.(–¦æ
+
+J
+java:S37403"/Provide the parametrized type for this generic.(âÎˆÿÿÿÿÿ
+l	java:S116"WRename this field "PatientsPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µİËœ
+p	java:S1167"VRename this field "PhoneNumber" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç­Áêıÿÿÿÿ
+˜
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(´­‹’
+?
+java:S58694"*Remove duplicates in this character class.(»ñ¿"
+h	java:S100;"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éô¯şÿÿÿÿ
+c	java:S100H"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãÊ°
+G
+java:S1602o",Remove useless curly braces around statement(úèæ‡üÿÿÿÿ
+d	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´­‹’
+i	java:S100ƒ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û†˜ÿÿÿÿÿ
+N
+java:S1172ƒ"2Remove this unused method parameter "actionEvent".(û†˜ÿÿÿÿÿ
+i	java:S100‹"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šµÀ­ûÿÿÿÿ
+N
+java:S1172‹"2Remove this unused method parameter "actionEvent".(šµÀ­ûÿÿÿÿ
+E
+java:S1905")Remove this unnecessary cast to "String".(Øè›ıÿÿÿÿ
+E
+java:S1905")Remove this unnecessary cast to "String".(Øè›ıÿÿÿÿ
+d	java:S100™"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºæÃ½
+M
+java:S1854›"6Remove this useless assignment to local variable "c1".(§ÑÀ
+I
+java:S1172™"2Remove this unused method parameter "actionEvent".(ºæÃ½
+>
+java:S1481›"'Remove this unused "c1" local variable.(§ÑÀ
+i	java:S100¤"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿©®Ïıÿÿÿÿ
+N
+java:S1172¤"2Remove this unused method parameter "actionEvent".(¿©®Ïıÿÿÿÿ
+E
+java:S1905¦")Remove this unnecessary cast to "String".(Øè›ıÿÿÿÿ
+E
+java:S1905¦")Remove this unnecessary cast to "String".(Øè›ıÿÿÿÿ
+M
+java:S1172µ"1Remove this unused method parameter "mouseEvent".(õà½øÿÿÿÿ
+j
+java:S11925"ODefine a constant instead of duplicating this literal "^[A-z ]{3,20}$" 3 times.(üß‡ƒÿÿÿÿÿ
+k	java:S117w"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÙìúÿÿÿÿ
+k	java:S117{"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑÓ‚Ïüÿÿÿÿ
+g	java:S117š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å›¬¥
+n
+java:S1104"XMake PatientsPane a static final constant or non-public and provide accessors if needed.(µİËœ
+r
+java:S1104"WMake tblPatients a static final constant or non-public and provide accessors if needed.(ã¨•Öûÿÿÿÿ
+o
+java:S1104 "YMake colPatientsID a static final constant or non-public and provide accessors if needed.(É³·
+k
+java:S1104!"UMake colRoleId a static final constant or non-public and provide accessors if needed.(ô€»¬
+r
+java:S1104""WMake colDocterId a static final constant or non-public and provide accessors if needed.(Ñ‘˜ıÿÿÿÿ
+v
+java:S1104#"[Make colPatientsName a static final constant or non-public and provide accessors if needed.(ì°»üÿÿÿÿ
+l
+java:S1104$"VMake colAddress a static final constant or non-public and provide accessors if needed.(¯ÿı°
+l
+java:S1104%"VMake colContact a static final constant or non-public and provide accessors if needed.(Ş˜ıÚ
+k
+java:S1104&"VMake colDisease a static final constant or non-public and provide accessors if needed.(–¦æ
+
+t
+java:S1104'"YMake txtPatientsID a static final constant or non-public and provide accessors if needed.(“Íä‚üÿÿÿÿ
+v
+java:S1104("[Make txtPatientsName a static final constant or non-public and provide accessors if needed.(è·©ÿşÿÿÿÿ
+t
+java:S1104)"YMake txtPatiNumber a static final constant or non-public and provide accessors if needed.(œ£øÿÿÿÿ
+v
+java:S1104*"[Make txtPatieAddress a static final constant or non-public and provide accessors if needed.(¨†ßÂøÿÿÿÿ
+q
+java:S1104+"VMake txtDisease a static final constant or non-public and provide accessors if needed.(ÈÒéÇûÿÿÿÿ
+m
+java:S1104,"WMake cmbDocterId a static final constant or non-public and provide accessors if needed.(œ®ËÃ
+k
+java:S1104-"UMake cmbRoleID a static final constant or non-public and provide accessors if needed.(à”ˆ»
+k
+java:S1104."UMake butModify a static final constant or non-public and provide accessors if needed.(à¤°©
+n
+java:S1104/"SMake butSave a static final constant or non-public and provide accessors if needed.(¢ßÜ‰øÿÿÿÿ
+k
+java:S11040"UMake butDelete a static final constant or non-public and provide accessors if needed.(›¶Æœ

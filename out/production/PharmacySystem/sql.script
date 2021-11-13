@@ -1,0 +1,258 @@
+DROP DATABASE IF EXISTS Pharmacy;
+CREATE DATABASE IF NOT EXISTS Pharmacy;
+SHOW DATABASES;
+USE Pharmacy;
+
+
+DROP TABLE IF EXISTS Rolle;
+CREATE TABLE IF NOT EXISTS Rolle(
+                                    RoId VARCHAR(15),
+                                    RoType VARCHAR(15),
+                                    RoNic VARCHAR(15),
+                                    DateofBirth VARCHAR(15),
+                                    Gender VARCHAR(10),
+                                    RoPhoneNo VARCHAR(15),
+                                    RoName VARCHAR(30) NOT NULL DEFAULT 'Unknown',
+                                    RoAddress VARCHAR(30),
+                                    CONSTRAINT PRIMARY KEY (RoId)
+);
+SHOW TABLES;
+DESCRIBE Rolle;
+
+INSERT INTO Rolle VALUES
+('R-0001','Admin','890424252V','88888','mm','0888883','Thilina','Panadura'),
+('R-0002','Cashier','89009434V','3444','mm','07888334','Kasun','Panadura'),
+('R-0003','Docter','89009434V','3444','mm','07888334','Kasun','Panadura');
+
+
+
+DROP TABLE IF EXISTS User;
+CREATE TABLE IF NOT EXISTS User(
+                                   roId VARCHAR (15),
+                                   Password VARCHAR (125),
+                                   uType VARCHAR (15),
+                                   uName VARCHAR (30) NOT NULL DEFAULT 'Unknown',
+                                   CONSTRAINT PRIMARY KEY (roId),
+                                   CONSTRAINT FOREIGN KEY (roId) REFERENCES Rolle(RoId) ON DELETE CASCADE ON UPDATE CASCADE
+);
+SHOW TABLES ;
+DESCRIBE User;
+
+INSERT INTO User VALUES
+('R-0001',sha1('12345'),'Admin','Thilina'),
+('R-0002',sha1('12345'),'Cashier','Kasun');
+
+
+
+
+DROP TABLE IF EXISTS Priscription;
+CREATE TABLE IF NOT EXISTS Priscription(
+                                           paId VARCHAR(15),
+                                           Medicing VARCHAR(15),
+                                           Time TIME,
+                                           Date DATE,
+                                           CONSTRAINT PRIMARY KEY (paId)
+);
+SHOW TABLES;
+DESCRIBE Priscription;
+
+INSERT INTO Priscription VALUES
+('Pa-0001','null','D-0001','Amocsilene','2.30','2021-09-18');
+
+
+
+
+DROP TABLE IF EXISTS Docter;
+CREATE TABLE IF NOT EXISTS Docter(
+                                     DrId VARCHAR(15),
+                                     DrName VARCHAR(30) NOT NULL DEFAULT 'Unknown',
+                                     DrType VARCHAR(15),
+                                     DrContactNo  VARCHAR(15),
+                                     CONSTRAINT PRIMARY KEY (DrId)
+);
+SHOW TABLES;
+DESCRIBE Docter;
+
+INSERT INTO Docter VALUES
+('D-0001','Pathum','MBBS','076884993'),
+('D-0002','Gayan','MBBS','076334423');
+
+
+
+
+DROP TABLE IF EXISTS `Docter Details`;
+CREATE TABLE IF NOT EXISTS `Docter Details`(
+                                               DrId VARCHAR(15),
+                                               PaId VARCHAR(15),
+                                               Date DATE,
+                                               Time TIME,
+                                               CONSTRAINT PRIMARY KEY (DrId,paId),
+                                               CONSTRAINT FOREIGN KEY (DrId) REFERENCES Docter(DrId) ON DELETE CASCADE ON UPDATE CASCADE,
+                                               CONSTRAINT FOREIGN KEY (PaId) REFERENCES Priscription(paId) ON DELETE CASCADE ON UPDATE CASCADE
+);
+SHOW TABLES;
+DESCRIBE `Docter Details`;
+
+
+
+
+DROP TABLE IF EXISTS NewDocter;
+CREATE TABLE IF NOT EXISTS NewDocter(
+                                        newDrId VARCHAR(15),
+                                        CONSTRAINT PRIMARY KEY (newDrId)
+);
+SHOW TABLES;
+DESCRIBE NewDocter;
+
+
+
+DROP TABLE IF EXISTS `NewDocter Details`;
+CREATE TABLE IF NOT EXISTS `NewDocter Details`(
+                                                  newDrId VARCHAR(15),
+                                                  PaId VARCHAR(15),
+                                                  Date DATE,
+                                                  Time TIME,
+                                                  CONSTRAINT PRIMARY KEY (newDrId,paId),
+                                                  CONSTRAINT FOREIGN KEY (newDrId) REFERENCES NewDocter(newDrId) ON DELETE CASCADE ON UPDATE CASCADE,
+                                                  CONSTRAINT FOREIGN KEY (PaId) REFERENCES Priscription(paId) ON DELETE CASCADE ON UPDATE CASCADE
+);
+SHOW TABLES;
+DESCRIBE `NewDocter Details`;
+
+
+
+DROP TABLE IF EXISTS Patients;
+CREATE TABLE IF NOT EXISTS Patients(
+                                       paId VARCHAR(15),
+                                       roId VARCHAR (15),
+                                       DorId VARCHAR(15),
+                                       paName VARCHAR(30) NOT NULL DEFAULT 'Unknown',
+                                       paAddress VARCHAR(15),
+                                       paContactNo  VARCHAR(15),
+                                       Disease VARCHAR (15),
+                                       CONSTRAINT PRIMARY KEY (paId),
+                                       CONSTRAINT FOREIGN KEY (roId) REFERENCES Rolle(RoId) ON DELETE CASCADE ON UPDATE CASCADE,
+                                       CONSTRAINT FOREIGN KEY (DorId) REFERENCES Docter(DrId) ON DELETE CASCADE ON UPDATE CASCADE
+);
+SHOW TABLES ;
+DESCRIBE Patients;
+
+INSERT INTO Patients VALUES
+('P-0001','R-0001','D-0001','Nthum','Panadura','0789339393','Una');
+
+
+
+DROP TABLE IF EXISTS `Medicine Order`;
+CREATE TABLE IF NOT EXISTS `Medicine Order`(
+                                               MoId VARCHAR(15),
+                                               paID VARCHAR(15),
+                                               oTime TIME,
+                                               oDate DATE,
+                                               cost DOUBLE,
+                                               CONSTRAINT PRIMARY KEY (MoId),
+                                               CONSTRAINT FOREIGN KEY (paID) REFERENCES Priscription(paId ) ON DELETE CASCADE ON UPDATE CASCADE
+
+);
+SHOW TABLES;
+DESCRIBE `Medicine Order`;
+INSERT INTO `Medicine Order` VALUES
+('Mo-0001','Pa-0001','400.0','2021-02.13');
+
+
+
+
+DROP TABLE IF EXISTS Medicine;
+CREATE TABLE IF NOT EXISTS Medicine(
+                                       MId VARCHAR(15),
+                                       mName VARCHAR(30),
+                                       mUnit VARCHAR(30),
+                                       mQty INT,
+                                       Manufacutre VARCHAR(15),
+                                       ExDate DATE,
+                                       Category VARCHAR(15),
+                                       Price DOUBLE,
+                                       CONSTRAINT PRIMARY KEY (MId)
+);
+SHOW TABLES;
+DESCRIBE Medicine;
+
+INSERT INTO Medicine VALUES
+('M-0001','Pendole','1mg','100','2020-02-22','2021-12-02','Tablets','34.0'),
+('M-0002','Vitamin C','5mg','200','2021-03-02','2021-12-02','Tablets','34.0'),
+('M-0003','Vitamin D','5mg','300','2020-04-12','2021-12-02','Tablets','34.0'),
+('M-0004','Siddhalepa Balm','50g','120','2020-12-22','2021-12-02','Tablets','34.0'),
+('M-0005','Amoxicillin','5mg','110','2020-02-10','2021-12-02','Tablets','34.0'),
+('M-0006','AMLODIPINE','10mg','140','2020-03-02','2021-12-02','Tablets','34.0'),
+('M-0007','ALLOPURINOL','12mg','400','2020-07-12','2021-12-02','Tablets','34.0'),
+('M-0008','AMPICILLIN','3mg','100','2020-04-12','2021-12-02','Tablets','34.0'),
+('M-0009','ATENOLOL','10mg','90','2020-03-22','2021-12-02','Tablets','34.0'),
+('M-0010','AZITHROMYCIN','20mg','80','2020-04-19','2021-12-02','Tablets','34.0'),
+('M-0011','BENZHEXOL','10mg','200','2020-05-22','2021-12-02','Tablets','34.0'),
+('M-0012','CALCITRIOL','20mg','200','2020-04-22','2021-12-02','Tablets','34.0'),
+('M-0013','AMPICILLIN','10mg','100','2020-02-22','2021-12-02','Tablets','34.0'),
+('M-0014','DEXTROSE','10mg','102','2020-02-22','2021-12-02','Tablets','34.0'),
+('M-0015','DIAZEPAM','30mg','299','2020-02-22','2021-12-02','Tablets','34.0'),
+('M-0016','DIETHYLCARB','20mg','90','2020-02-22','2021-12-02','Tablets','34.0');
+
+
+
+DROP TABLE IF EXISTS `Order Details`;
+CREATE TABLE IF NOT EXISTS `Order Details`(
+                                              MoId VARCHAR(15),
+                                              MiD VARCHAR(15),
+                                              Orderqty INT,
+                                              unitPrice DOUBLE,
+                                              discount DOUBLE,
+                                              Cost DOUBLE,
+                                              CONSTRAINT PRIMARY KEY (MoId,MiD),
+                                              CONSTRAINT FOREIGN KEY (MoId) REFERENCES `Medicine Order`(MoId) ON DELETE CASCADE ON UPDATE CASCADE,
+                                              CONSTRAINT FOREIGN KEY (MiD) REFERENCES  Medicine(MId) ON DELETE CASCADE ON UPDATE CASCADE
+);
+SHOW TABLES ;
+DESCRIBE `Order Details`;
+
+
+DROP TABLE IF EXISTS Supplier;
+CREATE TABLE IF NOT EXISTS Supplier(
+                                       SuppId VARCHAR(15),
+                                       SuppName VARCHAR(15),
+                                       CompanyName VARCHAR(15),
+                                       ContactNo VARCHAR(15),
+                                       CONSTRAINT PRIMARY KEY (SuppId)
+);
+SHOW TABLES;
+DESCRIBE Supplier;
+
+
+DROP TABLE IF EXISTS `Supplier Details`;
+CREATE TABLE IF NOT EXISTS `Supplier Details`(
+                                                 SuppId VARCHAR(15),
+                                                 MiD VARCHAR(15),
+                                                 Date DATE,
+                                                 Time TIME,    MediType VARCHAR(20),
+                                                 Price DOUBLE,
+                                                 Amount DOUBLE,
+                                                 mQty INT,
+                                                 CONSTRAINT PRIMARY KEY (SuppId,MiD),
+                                                 CONSTRAINT FOREIGN KEY (SuppId) REFERENCES Supplier(SuppId) ON DELETE CASCADE ON UPDATE CASCADE,
+                                                 CONSTRAINT FOREIGN KEY (MiD) REFERENCES Medicine(MId) ON DELETE CASCADE ON UPDATE CASCADE
+);
+SHOW TABLES;
+DESCRIBE `Supplier Details`;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

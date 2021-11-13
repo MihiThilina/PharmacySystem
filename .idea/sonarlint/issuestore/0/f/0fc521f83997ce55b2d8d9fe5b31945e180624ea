@@ -1,0 +1,97 @@
+
+E
+java:S3740)"/Provide the parametrized type for this generic.(Ÿœ¼‘
+E
+java:S3740*"/Provide the parametrized type for this generic.(‚À°©
+E
+java:S3740+"/Provide the parametrized type for this generic.(÷¼Ä“
+E
+java:S3740,"/Provide the parametrized type for this generic.(åâ·æ
+J
+java:S37401"/Provide the parametrized type for this generic.(æ¾ï‰ıÿÿÿÿ
+J
+java:S3740;"/Provide the parametrized type for this generic.(âÎˆÿÿÿÿÿ
+q	java:S116'"WRename this field "SupplierPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÕ«¥üÿÿÿÿ
+r
+java:S30081"WRename this field "SupplierList" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ¾ï‰ıÿÿÿÿ
+E
+java:S5869<"*Remove duplicates in this character class.(³•ñÙıÿÿÿÿ
+h	java:S100A"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éô¯şÿÿÿÿ
+h	java:S100J"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÜ°üÿÿÿÿ
+>	java:S108O")Either remove or fill this block of code.(å¥‡
+L
+java:S2696j"6Make the enclosing method "static" or remove this set.(«Ô®Ç
+D
+java:S1611s"/Remove the parentheses around the "e" parameter(Æ¢Â8
+>	java:S108|")Either remove or fill this block of code.(å¥‡
+i	java:S100ˆ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øè×ºşÿÿÿÿ
+N
+java:S1172ˆ"2Remove this unused method parameter "actionEvent".(øè×ºşÿÿÿÿ
+\
+java:S1854"@Remove this useless assignment to local variable "supplierList".(­š¿¥ûÿÿÿÿ
+N
+java:S1854—"7Remove this useless assignment to local variable "btn".(ÈØòµ
+M
+java:S1481"1Remove this unused "supplierList" local variable.(ÇÄÏˆÿÿÿÿÿ
+?
+java:S1481—"(Remove this unused "btn" local variable.(ÈØòµ
+R	java:S125˜"<This block of commented-out lines of code should be removed.(±ĞİŸ
+i	java:S100¦"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğõ¼·úÿÿÿÿ
+N
+java:S1172¦"2Remove this unused method parameter "actionEvent".(Ğõ¼·úÿÿÿÿ
+d	java:S100®"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÓˆ
+I
+java:S1172®"2Remove this unused method parameter "actionEvent".(ªÓˆ
+R	java:S125³"<This block of commented-out lines of code should be removed.(ÅØ±ã
+i	java:S100»"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã¤äùÿÿÿÿ
+M
+java:S1854½"6Remove this useless assignment to local variable "s1".(Ûø¹ù
+N
+java:S1172»"2Remove this unused method parameter "actionEvent".(ã¤äùÿÿÿÿ
+>
+java:S1481½"'Remove this unused "s1" local variable.(Ûø¹ù
+i	java:S100Æ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ü•®ûÿÿÿÿ
+N
+java:S1172Æ"2Remove this unused method parameter "actionEvent".(°ü•®ûÿÿÿÿ
+d	java:S100Ò"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á‹ÌÊ
+H
+java:S1172Ò"1Remove this unused method parameter "mouseEvent".(á‹ÌÊ
+`
+java:S1128"JRemove this unused import 'com.jfoenix.validation.RequiredFieldValidator'.(÷ß’û
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ä½ÍÄüÿÿÿÿ
+E
+java:S1128"/Remove this unused import 'view.Tm.PatientsTm'.(´ÙäÆ
+g	java:S117¼"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïùÇ 
+s
+java:S1104'"XMake SupplierPane a static final constant or non-public and provide accessors if needed.(ŒÕ«¥üÿÿÿÿ
+s
+java:S1104("XMake tblsuppliers a static final constant or non-public and provide accessors if needed.(ò„¿Õşÿÿÿÿ
+o
+java:S1104)"YMake colSupplierId a static final constant or non-public and provide accessors if needed.(Ÿœ¼‘
+q
+java:S1104*"[Make colSupplierName a static final constant or non-public and provide accessors if needed.(‚À°©
+p
+java:S1104+"ZMake colCompanyName a static final constant or non-public and provide accessors if needed.(÷¼Ä“
+p
+java:S1104,"ZMake colPhoneNumber a static final constant or non-public and provide accessors if needed.(åâ·æ
+o
+java:S1104-"TMake txtSupId a static final constant or non-public and provide accessors if needed.(Ü½—ÿÿÿÿÿ
+l
+java:S1104."VMake txtSupName a static final constant or non-public and provide accessors if needed.(»äúœ
+m
+java:S1104/"WMake txtSupPhone a static final constant or non-public and provide accessors if needed.(£ÄĞ
+t
+java:S11040"YMake txtSupCompany a static final constant or non-public and provide accessors if needed.(ö‚óØøÿÿÿÿ
+s
+java:S11042"XMake txtSearchSup a static final constant or non-public and provide accessors if needed.(ü«€¦üÿÿÿÿ
+n
+java:S11043"SMake btnSave a static final constant or non-public and provide accessors if needed.(Æ ‡’úÿÿÿÿ
+o
+java:S11044"TMake lblSupID a static final constant or non-public and provide accessors if needed.(ú½õıÿÿÿÿ
+q
+java:S11045"VMake lblCompany a static final constant or non-public and provide accessors if needed.(ÌÄÎîüÿÿÿÿ
+n
+java:S11046"SMake lblName a static final constant or non-public and provide accessors if needed.(½Ï®·ıÿÿÿÿ
+o
+java:S11047"TMake lblPhone a static final constant or non-public and provide accessors if needed.(•ØœÍùÿÿÿÿ

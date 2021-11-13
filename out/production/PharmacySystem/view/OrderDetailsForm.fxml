@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="649.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderDetailsFormController">
+   <children>
+      <Text layoutX="24.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Order Details Profile" wrappingWidth="221.7294921875">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Separator layoutY="55.0" prefHeight="7.0" prefWidth="940.0" />
+      <Button layoutX="31.0" layoutY="103.0" mnemonicParsing="false" onAction="#DeleteOrderDetails" prefHeight="20.0" prefWidth="180.0" style="-fx-background-color: #FF2A70;" styleClass="pane" stylesheets="@../style/addThings.css" text="Delete" />
+      <TableView fx:id="tblOrderDetails" layoutX="16.0" layoutY="179.0" prefHeight="405.0" prefWidth="893.0" stylesheets="@../style/table.css">
+         <columns>
+            <TableColumn fx:id="colMOrderID" prefWidth="132.0" text="Medicine Order Id" />
+            <TableColumn fx:id="colMedicineID" prefWidth="133.0" text="Medicine Id" />
+            <TableColumn fx:id="colOrderQty" prefWidth="121.0" text="Order Qty" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="167.0" text="Unit Price" />
+            <TableColumn fx:id="colDiscount" prefWidth="165.0" text="Discount" />
+            <TableColumn fx:id="colCost" prefWidth="174.0" text="Cost" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="txtSearchPre" alignment="BOTTOM_LEFT" labelFloat="true" layoutX="617.0" layoutY="23.0" onAction="#SearchPrescription" opacity="0.75" prefHeight="33.0" prefWidth="313.0" promptText="Search">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <ImageView blendMode="MULTIPLY" fitHeight="20.0" fitWidth="36.0" layoutX="589.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/search-1816292-1539657.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="684.0" layoutY="610.0" mnemonicParsing="false" onMouseClicked="#openReports" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: #1CE867;" styleClass="pane" stylesheets="@../style/addThings.css" text="Reports" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="cashierFullContext" prefHeight="722.0" prefWidth="1321.0" style="-fx-background-color: #d1e0e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierBoradFormController">
+   <children>
+      <Pane fx:id="MenuBar" layoutX="-41.0" layoutY="-10.0" prefHeight="722.0" prefWidth="284.0" styleClass="pane" stylesheets="@../style/addThings.css">
+         <children>
+            <ImageView blendMode="MULTIPLY" fitHeight="221.0" fitWidth="215.0" layoutX="56.0" layoutY="-35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/health-care-logo_18099-31.jpg" />
+               </image>
+            </ImageView>
+            <VBox layoutX="38.0" layoutY="206.0" prefHeight="488.0" prefWidth="226.0">
+               <children>
+                  <JFXButton buttonType="RAISED" onAction="#openDashBoard" prefHeight="0.0" prefWidth="200.0" style="-fx-background-color: #3d3d5c;" styleClass="pane" stylesheets="@../style/addThings.css" text="Dash Board" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#showPatientsDetails" prefHeight="28.0" prefWidth="244.0" style="-fx-background-color: #3d3d5c;" styleClass="pane" stylesheets="@../style/addThings.css" text="Patients" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#showMedicineOrder" prefHeight="28.0" prefWidth="244.0" style="-fx-background-color: #3d3d5c;" styleClass="pane" stylesheets="@../style/addThings.css" text="Order" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#showOrderDetails" prefHeight="28.0" prefWidth="244.0" style="-fx-background-color: #3d3d5c;" styleClass="pane" stylesheets="@../style/addThings.css" text="Order Details" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#showPriscriptionTable" prefHeight="28.0" prefWidth="244.0" style="-fx-background-color: #3d3d5c;" styleClass="pane" stylesheets="@../style/addThings.css" text="Priscription" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#showLogin" prefHeight="28.0" prefWidth="244.0" style="-fx-background-color: #3d3d5c;" styleClass="pane" stylesheets="@../style/addThings.css" text="LogOut" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <Text layoutX="77.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="183.7294921875" />
+         </children>
+      </Pane>
+      <AnchorPane fx:id="ChaierPane" layoutX="255.0" layoutY="47.0" prefHeight="660.0" prefWidth="1058.0" style="-fx-background-color: #ffffff;" stylesheets="@../style/system.css">
+         <children>
+            <Pane blendMode="DARKEN" layoutX="4.0" layoutY="79.0" prefHeight="570.0" prefWidth="233.0" styleClass="border" stylesheets="@../style/system.css">
+               <children>
+                  <VBox blendMode="DARKEN" layoutX="6.0" layoutY="6.0" prefHeight="370.0" prefWidth="226.0">
+                     <children>
+                        <JFXComboBox fx:id="cmbMedicineId" blendMode="MULTIPLY" labelFloat="true" prefHeight="36.0" prefWidth="282.0" promptText="Medicine Id">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </JFXComboBox>
+                        <JFXTextField fx:id="txtMedicineName" disable="true" labelFloat="true" opacity="0.93" prefHeight="26.0" prefWidth="256.0" promptText="Medicine Name" unFocusColor="BLACK">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" right="15.0" top="20.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtUnit" disable="true" labelFloat="true" opacity="0.93" prefHeight="26.0" prefWidth="277.0" promptText="Unit" unFocusColor="BLACK">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" right="15.0" top="20.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtAvailableQty" disable="true" labelFloat="true" opacity="0.93" prefHeight="26.0" prefWidth="277.0" promptText="Avalible Qty">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" right="15.0" top="20.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtExdate" disable="true" labelFloat="true" opacity="0.93" prefHeight="26.0" prefWidth="277.0" promptText="Manufacutre">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" right="15.0" top="20.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtPrice" disable="true" labelFloat="true" opacity="0.93" prefHeight="26.0" prefWidth="277.0" promptText="Price">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" right="15.0" top="20.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </padding>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+                  <Pane layoutX="44.0" layoutY="-14.0" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Medicine" wrappingWidth="118.99999395012856">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="9.0" layoutY="376.0" prefHeight="132.0" prefWidth="215.0" styleClass="border" stylesheets="@../style/system.css">
+                     <children>
+                        <Label layoutX="18.0" layoutY="20.0" prefHeight="46.0" prefWidth="54.0" text="Qty - :" />
+                        <Pane layoutX="13.0" layoutY="-15.0" prefHeight="26.0" prefWidth="176.0" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <Text layoutX="-7.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Medicine Qty &amp; Discount" wrappingWidth="191.00002093613148">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Label layoutX="14.0" layoutY="72.0" prefHeight="46.0" prefWidth="82.0" text="Discount -:" />
+                        <TextField fx:id="txtDiscount" layoutX="95.0" layoutY="81.0" prefHeight="26.0" prefWidth="54.0" stylesheets="@../style/system.css" text="0">
+                           <styleClass>
+                              <String fx:value="transparent" />
+                              <String fx:value="border" />
+                           </styleClass>
+                        </TextField>
+                        <TextField fx:id="txtQty" layoutX="68.0" layoutY="30.0" prefHeight="26.0" prefWidth="82.0" stylesheets="@../style/system.css">
+                           <styleClass>
+                              <String fx:value="transparent" />
+                              <String fx:value="border" />
+                           </styleClass>
+                        </TextField>
+                     </children>
+                  </Pane>
+                  <Button layoutX="9.0" layoutY="522.0" mnemonicParsing="false" onAction="#AddToCartOnAction" prefHeight="26.0" prefWidth="215.0" style="-fx-background-color: #1CE867;" stylesheets="@../style/addThings.css" text="Add To Cart" textAlignment="RIGHT" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </Pane>
+            <Label fx:id="lblMOrderID" layoutX="42.0" layoutY="10.0" prefHeight="46.0" prefWidth="156.0" text="MO - : 0001">
+               <font>
+                  <Font name="AnjaliOldLipi Regular" size="22.0" />
+               </font>
+            </Label>
+            <Pane layoutX="242.0" layoutY="191.0" prefHeight="328.0" prefWidth="810.0" styleClass="border" stylesheets="@../style/system.css">
+               <children>
+                  <TableView fx:id="tblCartTable" layoutX="8.0" layoutY="56.0" opacity="0.88" prefHeight="268.0" prefWidth="793.0" styleClass="border">
+                    <columns>
+                      <TableColumn fx:id="colMId" prefWidth="117.0" text="M ID" />
+                        <TableColumn fx:id="colMedicineName" prefWidth="144.0" text="Medicine Name" />
+                        <TableColumn fx:id="colQty" prefWidth="131.0" text="Qty " />
+                        <TableColumn fx:id="colUnitPrice" prefWidth="163.0" text="Unit Price" />
+                        <TableColumn fx:id="colDiscount" minWidth="7.0" prefWidth="118.0" text="Discount" />
+                        <TableColumn fx:id="colTotal" minWidth="7.0" prefWidth="117.0" text="Total" />
+                    </columns>
+                     <stylesheets>
+                        <URL value="@../style/system.css" />
+                        <URL value="@../style/table.css" />
+                     </stylesheets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TableView>
+                  <Pane layoutX="13.0" layoutY="-14.0" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Text layoutX="4.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cart Table" wrappingWidth="81.99998423457146">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Button layoutX="648.0" layoutY="12.0" mnemonicParsing="false" onAction="#UpdateOnAction" prefHeight="26.0" prefWidth="138.0" style="-fx-background-color: #24C1FF #24C1FF;" text="Update " textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <BoxBlur height="0.0" width="0.0" />
+                     </effect></Button>
+                  <Button layoutX="493.0" layoutY="14.0" mnemonicParsing="false" onAction="#DeleteOnAction" prefHeight="26.0" prefWidth="138.0" style="-fx-background-color: #FF2A70 #FF2A70;" text="Delete Selected" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </Pane>
+            <Pane layoutX="242.0" layoutY="531.0" prefHeight="117.0" prefWidth="810.0" styleClass="border" stylesheets="@../style/system.css">
+               <children>
+                  <Pane layoutX="10.0" layoutY="-9.0" prefHeight="15.0" prefWidth="77.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Text layoutX="4.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Out" wrappingWidth="81.99998423457146">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Label layoutX="124.0" layoutY="63.0" prefHeight="36.0" prefWidth="138.0" text="Total         - :" textFill="RED">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Button layoutX="599.0" layoutY="26.0" mnemonicParsing="false" onAction="#placeOrderOnAction" prefHeight="61.0" prefWidth="184.0" style="-fx-background-color: linear-gradient(to right top, #94f1ff, #85e8ff, #79deff, #72d3ff, #6fc8ff, #73c5ff, #78c2ff, #7dbfff, #83c4ff, #8ac9ff, #91cdff, #98d2ff);;" text="Comfirm Order">
+                     <cursor>
+                        <Cursor fx:constant="WAIT" />
+                     </cursor></Button>
+                  <Label layoutX="124.0" layoutY="23.0" prefHeight="36.0" prefWidth="138.0" text="Sub Total   -:" textFill="#2c0c0c">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTotal1" layoutX="317.0" layoutY="17.0" prefHeight="47.0" prefWidth="138.0" text="0.00" textFill="#234451">
+                     <font>
+                        <Font name="Rasa" size="33.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblTotal" layoutX="317.0" layoutY="58.0" prefHeight="47.0" prefWidth="138.0" text="0.00" textFill="#234451">
+                     <font>
+                        <Font name="Rasa" size="33.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="242.0" layoutY="26.0" prefHeight="157.0" prefWidth="586.0" styleClass="border" stylesheets="@../style/system.css">
+               <children>
+                  <Pane layoutX="23.0" layoutY="-13.0" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Priscription" wrappingWidth="118.99999395012856">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <JFXTextField fx:id="txtPriscriptionId" labelFloat="true" layoutX="23.0" layoutY="48.0" onKeyReleased="#KeyRelesedOnAction" prefHeight="25.0" prefWidth="242.0" promptText="Priscription Id" />
+                  <JFXTextField fx:id="txtMedicing" labelFloat="true" layoutX="24.0" layoutY="99.0" onKeyReleased="#KeyRelesedOnAction" prefHeight="25.0" prefWidth="242.0" promptText="Medicing" />
+                  <JFXTextField fx:id="txtDocterId" labelFloat="true" layoutX="299.0" layoutY="46.0" onKeyReleased="#KeyRelesedOnAction" prefHeight="25.0" prefWidth="242.0" promptText="Docter Id" />
+               </children>
+            </Pane>
+            <Button layoutX="855.0" layoutY="101.0" mnemonicParsing="false" onAction="#ClearData" prefHeight="26.0" prefWidth="176.0" style="-fx-background-color: #24C1FF #24C1FF;" text="Clear" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <BoxBlur height="0.0" width="0.0" />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="313.0" layoutY="4.0" prefHeight="34.0" prefWidth="998.0" styleClass="pane" stylesheets="@../style/addThings.css">
+         <children>
+            <Label fx:id="lblDate" layoutX="20.0" layoutY="2.0" prefHeight="15.0" prefWidth="198.0" text="2021-12-23">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="832.0" layoutY="3.0" prefHeight="30.0" prefWidth="156.0" text="10:12:35">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+</AnchorPane>

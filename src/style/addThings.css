@@ -1,0 +1,56 @@
+.root{
+    -fx-background-color: #c9fde2;
+}
+
+#txtPassword,#txtUserName,#cmbSelectRole{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color:#368B85;
+}
+.text-field{
+    -fx-border-left: 15px  solid red;
+    -fx-background-color:  #d1e0e0;
+}
+#txtPassword:pressed,#txtUserName:pressed,#cmbSelectRole:pressed{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color:#06F89D;
+}
+.button{
+    -fx-background-color: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+.comboBox{
+    -fx-background-color : transparent;
+}
+#myDiv {
+    transform: rotateX(150deg);
+}
+
+.pane{
+    -fx-background-color: #9eccfa;
+    -fx-background-radius: 50px;
+    -fx-effect: dropshadow( three-pass-box , rgb(198, 179, 255), 5, 0.0 , 0 , 1 );
+}
+
+.button{
+    -fx-background-color: #74C8D8;
+    -fx-background-color : transparent;
+    -fx-border-style: Rounder border;
+    -fx-border: 2px solid red;
+   // -fx-background-radius: 10;
+   // -fx-effect: dropshadow( three-pass-box , rgba(100, 100, 100, 0.6), 5, 0.0 , 0 , 1 );
+}
+#btnLogIn:hover{
+    -fx-background-color:#b3b3ff;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0), 0, 0.0 , 0 , 0 );
+}
+#btnClear:hover{
+    -fx-background-color: #798777;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0), 0, 0.0 , 0 , 0 );
+}

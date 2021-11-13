@@ -1,0 +1,32 @@
+
+J
+java:S1172"4Remove this unused method parameter "prescriptions".(Ü¶‚›
+>	java:S108V")Either remove or fill this block of code.(¿Å˜÷
+F
+java:S1128"+Remove this unused import 'model.Medicine'.(£…ãşÿÿÿÿ
+‹
+java:S1319u"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ßñÔäûÿÿÿÿ
+Œ
+java:S1319‡"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(’ÜÂ“ùÿÿÿÿ
+f	java:S117b"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÀº¡
+k	java:S117x"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í¡şäøÿÿÿÿ
+g	java:S117Ÿ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€áÃ§
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íª»
+W
+java:S22595"AA "NullPointerException" could be thrown; "con" is nullable here.(½¼§¢
+k
+java:S2095 "OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÙªÖıÿÿÿÿ
+j
+java:S2095v"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(«—ıÿÿÿÿ
+f
+java:S2095©"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Œû¸©
+f
+java:S2095ˆ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥€°î
+j
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¤•äÀüÿÿÿÿ
+e
+java:S2095M"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ğ”£
+j
+java:S2095c"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÙªÖıÿÿÿÿ
+j
+java:S2095@"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(üşÚÖüÿÿÿÿ
